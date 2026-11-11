@@ -23,12 +23,12 @@ jobs:
 
     steps:
     - name: Harden Runner
-      uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7 # v2.10.1
+      uses: step-security/harden-runner@1d88384fd173af6ecb012dfd0264a306b711241a # v2.22.4
       with:
         egress-policy: audit
 
     - name: Track and close stale issues/PRs
-      uses: actions/stale@28ca1036281a5e5922ead5184a1bbf96e5fc984e # v9.0.0
+      uses: actions/stale@4391f3da665fdf50b6810c1a66712fb9ba21aa93 # v11.0.0
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         days-before-issue-stale: 430
